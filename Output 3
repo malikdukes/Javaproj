@@ -1,0 +1,60 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab1_output;
+
+import java.text.NumberFormat;
+
+/**
+ *
+ * NAME
+ */
+public class Output3 
+{
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)
+    {
+        // TODO code application logic here
+        //Write a program that will compute the total sales tax on a purchase of $179.89. 
+        //Assume the state sales tax is 8% and the county sales tax is 3%.
+        //
+        //
+        //Display your output in the format below:
+        //Purchase Price: $[purchasePrice]
+        //State Tax %: [stateTaxPercent]%
+        //State Tax Amount: $[stateTaxAmt]
+        //County Tax %: [countyTaxPercent]%
+        //County Tax Amount: $[countyTaxAmt]
+        //Total Tax Owed: $[totalTax]
+        
+        
+        //1. declare and assign variables
+        double purchasePrice = 179.89;
+        double stateTaxPercent = 8;
+        double stateTaxAmt;   
+        double countyTaxPercent = 3;
+        double countyTaxAmt;
+        double totalTax; 
+        
+        //2. calculate
+        stateTaxAmt = (purchasePrice) * (stateTaxPercent/100);
+        countyTaxAmt = (purchasePrice +  stateTaxAmt) * (countyTaxPercent/100);
+        totalTax = purchasePrice + countyTaxAmt + stateTaxAmt ;
+        
+         NumberFormat numberFormatter = NumberFormat.getNumberInstance();
+        numberFormatter.setMaximumFractionDigits(2);
+        
+        System.out.println("Purchase Price: $" + numberFormatter.format(purchasePrice));
+        System.out.println("State Tax % :" + numberFormatter.format(stateTaxPercent) + "%");
+        System.out.println("State Tax Amount: $" + numberFormatter.format(stateTaxAmt));
+        System.out.println("County Tax %: " + numberFormatter.format(countyTaxPercent) + "%");
+        System.out.println("County Tax Amount: $" + numberFormatter.format(countyTaxAmt));
+        System.out.println("Total Tax Owed: $" + numberFormatter.format(totalTax));
+    }
+    
+}
