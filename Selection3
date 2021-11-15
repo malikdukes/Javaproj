@@ -1,0 +1,79 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab3_selection;
+
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+/**
+ *
+ * Name
+ */
+public class selection3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+    // TODO code application logic here
+    //The area of a rectangle is calculated by multiplying its length times its width.
+    //Write a program that asks the user for the length and the width of two rectangles.
+    //The program should display to the user which rectangle has the greater area 
+    //or if the areas are equal.
+        
+    // step 1: declare variables
+    // step 2: ask user
+    // step 3: calculate
+    // step 4: display
+        
+    double length1;
+    double height1;
+    double length2;
+    double height2;
+    double rectangle1;
+    double rectangle2;
+    Scanner inputObj = new Scanner(System.in);
+        
+        
+    System.out.print("What is the height of the rectangle 1? ");
+        height1 = inputObj.nextDouble();
+    System.out.print("What is the length of rectangle 1 ? ");
+        length1= inputObj.nextDouble();
+
+    System.out.print("What is the height of the rectangle 2 ? ");
+        height2 = inputObj.nextDouble();
+    System.out.print("What is the length of rectangle 2 ? ");
+        length2 = inputObj.nextDouble();
+    
+
+    rectangle1 = (length1 * height1);
+    rectangle2 = (length2 * height2);
+    
+     NumberFormat numberFormatter = NumberFormat.getNumberInstance();
+    numberFormatter.setMaximumFractionDigits(1);
+    
+    
+    if(rectangle1 == rectangle2)
+    {
+	System.out.println("Both rectangles are equal");
+    }
+    else if(rectangle1 > rectangle2)
+    {
+        System.out.println("Rectangle 1 is greater than reactangle 2");
+    }
+    else
+    {
+        System.out.println("Rectangle 2 is greater than rectangle 1 ");
+    }
+    
+    
+    
+        
+
+    }
+    
+}
