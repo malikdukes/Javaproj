@@ -1,0 +1,69 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab4_repetition;
+
+/**
+ *
+ * NAME
+ */
+public class repetition3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)
+    {
+        // TODO code application logic here
+        //Write a program that uses a loop to multiply all of the numbers 
+        //from 1 to 5 inclusive.
+        //Display your output in the format below:
+        //The product of the numbers from 1-5 is: [product]
+       
+        
+        //step1: declare identifiers
+        
+        int count;
+        int sum = 0; 
+        
+        //step2: use for steps to create a loop
+        //2.1: choose loop category
+        //2.2: choose loop control variaable
+   
+        //step3:design the loop
+        // a) initalization - count = 1
+        // b) logical expression - ( count < 6 )
+        // c) update - ( count * 1 )
+        // d) work
+        
+        
+        //step4: choose loop type
+        
+        for(count = 1; (count <= 5); count = count + 1)
+        {
+            
+	//Work - Statement(s)
+       
+	System.out.println("Before multipling count is " + count + 
+        " and "  + " The product of the numbers is:" + sum);
+        sum = count * count ;	
+        
+        }
+	 
+        
+        
+        
+        //step5: display format 
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+}
