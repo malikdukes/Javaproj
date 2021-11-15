@@ -1,0 +1,71 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab2_input;
+
+import lab1_output.*;
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+/**
+ *
+ * NAME
+ */
+public class Input4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        // TODO code application logic here
+
+        //1 - variable name
+        //2 - store floats
+        //3 - calculate
+        //4 - display output
+        
+        double mealCost;
+        double taxAmt;
+        double tipAmt;
+        double totalBill;
+        double taxPercent;
+        double tipPercent;
+         Scanner inputObj = new Scanner(System.in);
+      
+    
+        System.out.print("Enter Meal Cost? ");
+        mealCost = inputObj.nextDouble();
+        
+        System.out.print("Enter tax percent? ");
+        taxPercent= inputObj.nextDouble();
+        
+        System.out.print("Enter tip percent? ");
+        tipPercent = inputObj.nextDouble();
+      
+       
+       
+        taxAmt = (mealCost) * (taxPercent/100);
+        tipAmt = (mealCost + taxAmt ) * (tipPercent/100);
+        totalBill = mealCost + taxAmt + tipAmt;
+      
+        
+        NumberFormat numberFormatter = NumberFormat.getNumberInstance();
+        numberFormatter.setMaximumFractionDigits(2);
+        
+     
+        System.out.println("/////////////////////////////////////////////////////////////////////////");
+        System.out.println("Meal Recipt");
+        System.out.println("/////////////////////////////////////////////////////////////////////////");
+        System.out.println(" Meal Cost:" + " $" + numberFormatter.format(mealCost ));
+        System.out.println("Tax Amount:" + " $" + numberFormatter.format(taxAmt));
+        System.out.println("Tip Amount:" + " $" + numberFormatter.format(tipAmt));
+        System.out.println("Total Bill:" + " $" + numberFormatter.format(totalBill));
+        System.out.println("/////////////////////////////////////////////////////////////////////////");   
+        
+        
+    }
+    
+}
