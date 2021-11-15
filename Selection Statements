@@ -1,0 +1,56 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab3_selection;
+
+import java.util.Scanner;
+
+/**
+ *
+ * NAME
+ */
+public class selection1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)
+    {
+    // TODO code application logic here
+    //Write a program that asks the user to enter two numbers. 
+    //The program should use the conditional operator to determine which number is the smaller and which is the larger.
+    //The program should display to the user which number is larger and which number is smaller or if the two numbers are equal.
+        
+    //step 1: ask user 2 enter two numbers
+    //step 2: save variables
+        
+        Scanner inputObj = new Scanner(System.in);
+        double number1;
+        double number2;
+
+    System.out.print("Enter your first number? ");
+        number1 = inputObj.nextDouble();
+        
+    System.out.print("Enter your second number? ");
+        number2 = inputObj.nextDouble();
+        
+     if(number1 == number2)
+    {
+	System.out.println("number1 " + num1 + " and number2 " + number2 + " are equal ");
+    }
+    else if(number1 > number2)
+    {
+        System.out.println("number1 " + num1 + " is greater than " + " number2 " + number2 );
+    }
+    else
+    {
+        System.out.println("number2 " + number2 + " is greater than " + " number1 " + number1 );
+    }
+        
+        
+        
+    }
+    
+}
