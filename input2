@@ -1,0 +1,57 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab2_input;
+
+import lab1_output.*;
+import java.text.NumberFormat;
+import java.util.Scanner;
+/**
+ *
+ * NAME
+ */
+public class Input2 
+{
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        // TODO code application logic here
+        //Revenue Prediction: The Online Retail division of Amazon generates 73% of total sales for the company. 
+        //Based on that percentage, write a program that will predict how much revenue the retail division 
+        //will generate if the Amazon reports $340.5 million in revenue for the year.
+        //
+        //
+        //Display your output in the format below:
+        //Amazon’s Total Revenue: $[totalRevenue]M
+        //Online Retail % of Total Revenue: [percentOfTotalRevenue]%
+        //Online Retail’s Revenue: $[onlineRetailRevenue]M
+        
+       
+        double totalRevenue;
+        double percentOfTotalRevenue;
+        double onlineRetailRevenue;
+        Scanner inputObj = new Scanner(System.in); 
+       
+        System.out.print("Enter Total Revenue? ");
+        totalRevenue = inputObj.nextDouble();
+        
+        System.out.print("Enter Percent of Total Revenue? ");
+        percentOfTotalRevenue = inputObj.nextDouble();
+        
+        
+        onlineRetailRevenue = (totalRevenue) * (percentOfTotalRevenue/100);
+        NumberFormat numberFormatter = NumberFormat.getNumberInstance();
+        numberFormatter.setMaximumFractionDigits(2);
+        
+        
+        System.out.println("Amazon’s Total Revenue: $" + numberFormatter.format(totalRevenue) + "M ");
+        System.out.println("Online Retail % of Total Revenue: $" + numberFormatter.format(percentOfTotalRevenue) + "% ");
+        System.out.println("Online Retail’s Revenue: $" + numberFormatter.format(onlineRetailRevenue) + "M ");
+    }
+    
+}
