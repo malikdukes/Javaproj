@@ -1,0 +1,67 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab4_repetition;
+
+import java.util.Scanner;
+
+/**
+ *
+ * NAME
+ */
+public class repetition5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        // TODO code application logic here
+        //Write a program that uses a loop to display the phrase 
+        //“Please select an item. Enter {Q} or {q} to quit” until 
+        //the user enters a “Q” or a “q”.
+        
+        
+        
+        //step 1:declare identifers
+        
+        String userEntry = null;
+        Scanner inputObj = new Scanner(System.in); 
+        
+        //step 2:
+        //2.1 Choose the Loop Control Variable(s) (LCV)
+        //2.2 Choose the loop category
+        // step 3: Design the Loop
+        //a) Initialization - Where the loop starts (starting number or event)
+        
+        System.out.print("Please select an item? Enter {Q} or {q} to quit ");
+        userEntry = inputObj.nextLine();
+        
+        //b) Logical Expression - How long the loop continues
+        //c) Update - How to get from the start to the end of the loop
+	//d) Work (Statements) - What the loop does each iteration
+				
+        
+        //2.4: Choose the loop type (FOR loop or WHILE loop)
+        
+        while(!userEntry.equals("q") && !userEntry.equals("Q"))
+	
+        {
+	//Work -
+	//Update
+        System.out.print("Please select an item? Enter {Q} or {q} to quit ");
+        userEntry = inputObj.nextLine();
+        
+	}
+        
+        //step 3: display output
+        
+        
+        
+        
+        
+    }
+    
+}
