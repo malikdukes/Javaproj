@@ -1,0 +1,58 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab4_repetition;
+
+import java.util.Scanner;
+
+/**
+ *
+ * NAME
+ */
+public class repetition1 
+{
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        // TODO code application logic here
+        //Write a program that uses a loop to count down 
+        //and display all of the numbers from 50 to 0.
+
+        
+         //step 1:declare identifers
+        
+        int count;
+        
+        //step 2:
+        //2.1 Choose the Loop Control Variable(s) (LCV)
+        //2.2 Choose the loop category
+        // step 3: Design the Loop
+        //a) Initialization - Where the loop starts (starting number or event)
+        
+       count= 50;
+        
+        //b) Logical Expression - How long the loop continues
+        //c) Update - How to get from the start to the end of the loop
+	//d) Work (Statements) - What the loop does each iteration
+				
+        
+        //2.4: Choose the loop type (FOR loop or WHILE loop)
+        
+        for(count = 50; count<= 50 && count >= 0; count = count - 1)
+        {
+	
+	//Work - Statement(s)	
+        System.out.println(count);
+	}
+        
+        
+        //step 3: display output
+    }
+}
+   
+
