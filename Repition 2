@@ -1,0 +1,58 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab4_repetition;
+
+/**
+ *
+ * NAME
+ */
+public class repetition2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        // TODO code application logic here
+        //Write a program that uses a loop to sum all 
+        //of the numbers from 1 to 100 inclusive.
+        //Display your output in the format below:
+        //The sum of the numbers from 1-100 is: [sum]
+        
+         //step 1:declare identifers
+        
+        int count;
+        int sum = 1;
+        //step 2:
+        //2.1 Choose the Loop Control Variable(s) (LCV)
+        //2.2 Choose the loop category
+        // step 3: Design the Loop
+        //a) Initialization - Where the loop starts (starting number or event)
+        
+       count= 0;
+        
+        //b) Logical Expression - How long the loop continues
+        //c) Update - How to get from the start to the end of the loop
+	//d) Work (Statements) - What the loop does each iteration
+				
+        
+        //2.4: Choose the loop type (FOR loop or WHILE loop)
+        
+        for(count = 0; count <= 100; count = count + 1)
+        {
+	
+	//Work - Statement(s)	
+        System.out.println("Before adding count is " + count + 
+        " and "  + " sum is " + sum);
+        sum = count + sum;
+	}
+        
+        
+        //step 3: display output
+
+    }
+    
+}
