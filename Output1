@@ -1,0 +1,42 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab1_output;
+
+/**
+ *
+ * NAME
+ */
+public class Output1 
+{
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        // TODO code application logic here
+//        Sum of two numbers: Write a program that stores the integers 234 and 516
+//        in variables and stores the sum of these two in a variable named result. 
+//        Display your output in equation form.
+//        
+//        { Ex. [num1] + [num2] = [sum] }
+        
+        //Step 1- declare variables 
+        //Step 2- store the ints into variables
+        //Step 3- add both variables
+        //Step 4- display results
+        
+        int number1 = 234;
+        int number2 = 516;
+        int sum = number1 + number2;
+        
+        System.out.println(number1 + " + " + number2 + " = " + sum);
+        
+        
+
+    }
+    
+}
