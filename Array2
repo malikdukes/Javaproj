@@ -1,0 +1,70 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab5_arrays;
+
+import java.util.Scanner;
+
+/**
+ *
+ * NAME
+ */
+public class arrayB {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        // TODO code application logic here
+        //b) Read in five values of type “int” from the user and store them in 
+        //an array.
+        //1) Use a loop to calculate the sum of the numbers in the array. 
+        //Output the result.
+        //2) Use a loop to calculate the average of the numbers in the array. 
+        //Output the result.
+        //3) Use a loop to calculate the difference of the numbers in the array. 
+        //Output the result.
+        
+         Scanner inputObj = new Scanner(System.in);
+        final int TOTAL_VALUES = 5;  
+        int numbers[] = new int[TOTAL_VALUES];  // allocating memory to array
+        int index;
+        int sum = 0;
+        int average = 0;
+        int difference = 0;
+        
+        //Init all values in the array by getting values from the user
+	for (index = 0; index < TOTAL_VALUES; index += 1)
+	{
+            System.out.print("Enter a number #" + index + ": ");
+            numbers[index]= inputObj.nextInt();
+	}
+        
+        //Use a loop to calculate the sum of the numbers in the array. 
+        for (index = 0; index < TOTAL_VALUES; index += 1)
+	{	
+            sum = TOTAL_VALUES + index;
+            System.out.println("\n\nThe sum of numbers in the array" + sum);
+	}
+	
+
+	//calculate the average of the numbers in the array
+	for (index = 0; index < TOTAL_VALUES; index += 1)
+	{	
+            average = sum/5;
+            System.out.println("\n\nThe average of numbers in the array" + average);
+	}
+	
+        //calculate the difference of the numbers in the array
+        for (index = 0; index < TOTAL_VALUES; index += 1)
+	{	
+            difference = TOTAL_VALUES - index;
+            System.out.println("\n\nThe difference of numbers in the array" + difference);
+	}
+        
+    }
+    
+}
